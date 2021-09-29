@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+<body>
+    <div class="cont__bg"></div>
+    <header>
+        <div class="contNav">
+            <nav>
+                <div class="cont__logo">
+                    <a class="cont__link" href="index.html"><img class="cont__img" src="https://i.ibb.co/1rtj7js/logo.png" alt="Logo de la empresa familiar"></a>
+                </div>
+                <ul class="menu__lista">
+                    <li class="menu__nav-li"><a class="menu__nav-link" href="index.html">Inicio</a></li>
+                    <li class="menu__nav-li"><a class="menu__nav-link" href="historia.html">Historia</a></li>
+                    <li class="menu__nav-li"><a class="menu__nav-link" href="actividades.html">Actividades</a></li>
+                    <li class="menu__nav-li"><a class="menu__nav-link" href="ventas.html">Ventas</a></li>
+                    <li class="menu__nav-li"><a class="menu__nav-li--active" href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="hide">
+                    <i class="fas fa-bars hide_icon" area-hidden="true"><span class="hide_span">Menú</span></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+<main>
+    <section class="section__main-txt-contact section">
+        <div class="formContacts">
+                <form class="formContacts__form" action="php" method="POST" enctype="multipart/form-data">
+                <fieldset class="formContacts__form-fieldset">
+                    <legend class="formContacts__form-legend">¡Hola! ¿Cuando nos quieres visitar?</legend><br>      
+                        <label class="formContacts__form-label" for="nombre">Nombre</label>
+                            <input class="formContacts__form-txt" type="text" maxlength="30" placeholder="Nombre y apellido"><br>
+                       
+                        <label class="formContacts__form-label" for="tel">Teléfono </label>
+                            <input class="formContacts__form-tel" type="tel" maxlength="30" placeholder="Numero de teléfono"><br>
+                        <label class="formContacts__form-label" for="email">Email </label>
+                            <input class="formContacts__form-email" type="email" maxlength="60" placeholder="Correo electrónico"><br>
+                        
+                       
+                        <label class="formContacts__form-label" for="nombre">Mensaje </label><br><br> 
+                            <textarea class="formContacts__form-textarea" name="" id="" cols="43" rows="5" placeholder="Mensaje"></textarea><br><br>
+                    <input class="formContacts__form-submit" type="submit">
+                    <input class="formContacts__form-reset" type="reset">
+                </fieldset> 
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer__cont">
+        <div class="cont__texto">
+            <a href="mailto:santianita@email.com"><span>Correo:</span> santianita@email.com</a>
+            <p class="cont__texto-txt">Telefono: +54 09999 999999</p>
+        </div>
+        <div class="cont__redes">
+            <a class="cont_redes-link" href="#"><i class="fab fa-facebook-square cont_redes-link--logo"></i></a>
+            <a class="cont_redes-link" href="#"><i class="fab fa-whatsapp-square cont_redes-link--logo"></i></a>
+            <a class="cont_redes-link" href="#"><i class="fab fa-youtube-square cont_redes-link--logo"></i></a>
+            <a class="cont_redes-link" href="#"><i class="fab fa-twitter-square cont_redes-link--logo"></i></a>
+            <a class="cont_redes-link" href="#"><i class="fab fa-patreon cont_redes-link--logo"></i></a>
+        </div>
+    </div>         
+</footer>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+  $(".hide").on('click', function() {
+    $("nav ul").toggle('slow');
+  })
+</script>
+</body>
+</html>
+</body>
+</html>

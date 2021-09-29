@@ -1,0 +1,103 @@
+.section__ventas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .contenedor__ventas {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 150px 150px;   
+        grid-column-gap: 20px;
+        grid-row-gap: 50px;
+        @media screen and (min-width: 200px) and (max-width:450px) {
+            grid-template-columns: 100px 100px;
+            grid-template-rows: 150px 150px;  
+            padding-top: 100px;
+        }
+        .ventas__titulos {
+            color: white;
+        }
+        .cont__cajita {
+            .cajita__img {
+                flex: 25%;
+                max-width: 80%;
+                padding: 0 4px;
+                @media screen and (min-width: 200px) and (max-width:450px) {
+                    max-width: 100%;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+        }     
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.container_ad {
+    width: 100%;
+    padding: 180px;
+    
+    .section__ventas-txt {
+        width: 100%;
+        margin: auto;
+        
+        .cajon {
+            width: 100%;
+            .caja_arriba {
+                display: flex;
+                margin-bottom: 40px;
+                @media screen and (min-width: 200px) and (max-width:450px) {
+                    display: block;
+                }
+            } 
+            .caja_abajo {
+                display: flex;
+                @media screen and (min-width: 200px) and (max-width:450px) {
+                    display: block;
+                }
+            }
+            .cajita {
+                width: 100%;
+                text-align: center;
+                border: 3px solid white;
+                margin: 0 40px 0 40px;
+                .cajita__img {
+                    width: 200px;
+                    margin: auto;
+                    img {
+                        width: 100%;
+                        padding: 10px;
+                    }
+                }
+                .ventas__titulos {
+                    font-size: 30px;
+                    color: $colorPrimario;
+                    margin-bottom: 10px;
+                }
+                p {
+                    padding: 20px;
+                    color: white;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+*/
